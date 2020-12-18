@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>final one</title>
+        <style>
+            div{
+                text-align: center;
+                font-size: 25px;
+                background-color: forestgreen;
+                margin:0px;
+            }
+            table,td{
+                border: 5px solid black;
+                border-collapse: collapse;
+                padding: 5px;
+                
+            }
+            input,input:hover{
+                height: 25px;
+                text-decoration: none;
+                background-color: grey;
+                color: white;
+                font-size: 20px;
+                padding: 5px;
+                cursor: pointer;
+            }
+            input[type="submit"]{
+                padding: 15px;
+                width: 100px;
+                height: 50px;
+            }
+            input[type="submit"]:hover{
+                background-color: hotpink;
+                cursor: pointer;
+                zoom: 1.3;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+        <h1>Registration Form</h1>
+        <h3>Enter the following details</h3>
+            <form>
+                <table width=100%>
+                    <tr>
+                        <td>
+                            <label for="First-name">First-name</label>
+                        </td>
+                        <td>
+                            <input type="text" id="First-name" required>
+                        </td>
+                        <td>
+                            <label for="Last-name">Last-name</label>
+                        </td>
+                        <td>
+                            <input type="text" id="Last-name" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Username">Username</label>
+                        </td>
+                        <td>
+                            <input type="text" id="Username" required>
+                        </td>
+                        <td>
+                            <label for="Password">Password</label>
+                        </td>
+                        <td>
+                            <input type="password" id="Password" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <label for="Gender">Gender</label>
+                        </td>
+                        <td class="we">
+                            <input type="radio" name="Gender">Male
+                            <input type="radio" name="Gender">Female
+                        </td>
+                        <td>
+                            <label for="Phoneno.">Phone Number</label>
+                        </td>
+                        <td>
+                            <input type="number" id="Phoneno." required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Adress">Adress</label>
+                        </td>
+                        <td>
+                            <textarea name="Adress" id="Adress" cols="50" rows="5"></textarea>
+                        </td>
+                        <td>
+                            <label for="Age">Age</label>
+                        </td>
+                        <td>
+                            <input type="number" max="50" min="18" id="Age">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <input type="submit" value="Submit">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
